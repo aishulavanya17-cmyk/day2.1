@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: white;
+  padding: 10px 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hamburger (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+/* Skills */
+.skills span {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Cards */
+.card {
+  background: #eee;
+  margin: 10px auto;
+  padding: 15px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* Button */
+button {
+  padding: 10px 15px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 10px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
